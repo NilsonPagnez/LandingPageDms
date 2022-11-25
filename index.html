@@ -14,13 +14,14 @@
 <body>
     <header >
         <nav id="navbar" class="container" >
-            <img src="img/logo.svg" alt="">
+            <a id="logo" href="./"><img src="img/logo.svg" alt=""></a>
+            
             <ul class="itens">
                 <li ><a href="#" class="colorchange">Menu Item</a> </li>
                 <li><a href="#" class="colorchange">Menu Item</a> </li>
                 <li><a href="#" class="colorchange">Menu Item</a> </li>
                 <li><a href="#" class="colorchange">Menu Item</a> </li>
-                <li class="crescer"><a id="call"  href="#">Call to action</a></li>
+                <li  class="crescer"><a id="call"  href="#">Call to action</a></li>
             </ul>
 
         </nav>
@@ -28,13 +29,13 @@
     </header>
     
 
-    <section  id="sessao1" class="sessao" >
+    <section data-aos="fade-right" id="sessao1" class="sessao" >
         <div id="front" class="container">
             <div class="principal">
                 <div id="text">
                     <h1>Front-end descomplicado e direto ao ponto!</h1>
                     <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos altamente renomados.</p>
-                    <div><li class="crescer"><a href="#" class="crescer" >Fazer parte da lista de espera</a></li></div>
+                    <div  class="crescer"><a href="#">Fazer parte da lista de espera</a></div>
                     
                 </div>
                 
@@ -54,7 +55,7 @@
 
     
 
-    <section id="sessao2" class="sessao">
+    <section data-aos="fade-up" id="sessao2" class="sessao">
         
         <div  class="container titulo">
                 <div>
@@ -62,7 +63,7 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 </div>
             
-            <div id="boxes" class="container">
+            <div data-aos="fade-up" id="boxes" class="container">
                 <div class="box crescer">
                     <div class="conteudobox">
                         <img src="img/icon-circle.svg" alt="">
@@ -88,14 +89,15 @@
             </div>
 
 
-            <article>
+            <div class="allcards">
+
                 <div id="titulocards" >
                     <div id="">
                         <h2>Título</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     
-                    <li class="crescer"><a  href="#" > Call to action</a></li>
+                    <div class="crescer"><a  href="#" > Call to action</a></div>
                 </div>
                 
                 <div id="cards">
@@ -118,7 +120,7 @@
                 </div>
 
 
-            </article>
+            </div>
             
 
 
@@ -132,10 +134,10 @@
 
     <section id="sessao3" class="sessao">
         <div class="titulo">
-            <div id="centralizar">
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="centralizar">
             <h2>Front-end descomplicado e direto ao ponto!</h2>
             <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos altamente renomados.</p>
-            <li class="crescer"><a href="#">Fazer parte da lista de espera</a></li>
+            <div class="crescer"><a href="#">Fazer parte da lista de espera</a></div>
         </div>
         </div>
 
@@ -164,7 +166,7 @@
             </ul>
             <ul>
                 <h3>Nossas redes sociais</h3>
-                <li><a href="" class="colorchangefooter"> <img src="img/instagram.svg" alt="">Instagram</a></li>
+                <li><a href="" class="colorchangefooter"> <img src="img/instagram.svg" alt="">Instagram </a></li>
                 <li><a href="" class="colorchangefooter"> <img src="img/linkedin.svg" alt="">Linkedin</a></li>
                 <li><a href="" class="colorchangefooter"> <img src="img/youtube.svg" alt="">Youtube</a></li>
             </ul>
@@ -187,6 +189,9 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 
 </body>
